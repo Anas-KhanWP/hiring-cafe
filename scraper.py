@@ -56,8 +56,8 @@ processed_divs = set()
 job_data = []
 
 while True:
-    # if j >= 2:
-    #     break
+    if j >= 2:
+        break
 
     time.sleep(2)
     # Scroll down
@@ -208,7 +208,7 @@ while True:
     # Check if reaching the end of the page
     scroll_height = driver.execute_script("return document.body.scrollHeight;")
     if screen_height * i > scroll_height:
-        break
+        # break
         j += 1
         
 
